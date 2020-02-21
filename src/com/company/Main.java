@@ -21,6 +21,6 @@ public class Main {
 
         hour = minute >= 60 ? (hour%12)+(minute/60) : hour%12 ;
         minute = minute%60;
-        
+        System.out.printf("The time is: %d:%02d",hour,minute );
     }
 }
