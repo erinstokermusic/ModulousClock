@@ -19,7 +19,8 @@ public class Main {
         System.out.println("Give me the minutes.");
         minute = keyboard.nextInt();
 
-        hour = minute >= 60 ? (hour%12)+1 : hour%12 ;
-        System.out.println(hour + " " + minute);
+        hour = minute >= 60 ? (hour%12)+(minute/60) : hour%12 ;
+        minute = minute%60;
+        
     }
 }
